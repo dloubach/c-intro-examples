@@ -31,7 +31,7 @@ void printList(list_t l){
 void printListReversed(list_t l){
   if(l->prox != NULL)
   {
-	 printList(l->prox);
+	 printListReversed(l->prox);
     printf("%d ", l->prox->elem);
 
   }
@@ -52,6 +52,7 @@ int main(void)
 	 p->prox->elem = i;
 	 p = p->prox;
   }
+  p->prox = NULL;
     
   printf("Hello, World -- Recursive list printing!\n");
   printList(L);
