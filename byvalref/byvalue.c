@@ -5,7 +5,7 @@
  * how to compile
  * $ gcc byvalue.c -o byvalue
  * how to run
- * ./byvalue
+ * $ ./byvalue
  *
  * author: dloubach
  */
