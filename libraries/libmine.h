@@ -6,6 +6,6 @@
 #ifndef _LIBMIN_H
 #define _LIBMIN_H
 
-void library_printString(const char* cMyStr);
+void library_printString(const char*);
 
 #endif

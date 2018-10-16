@@ -40,12 +40,12 @@ void simplePrint(int iTotal, ...)
   va_list vlArgs;
 
   /* void va_start(va_list ap, last); 
-	* Initializes <ap> for subsquement use by
-	* va_arg() and va_end() The argument <last> is the name of the last argument
-	* before the variable argument list, i.e., the last argument of which the
-	* calling function knows the type
-	* ap == argument pointer variable
-	*/
+   * Initializes <ap> for subsquement use by
+   * va_arg() and va_end() The argument <last> is the name of the last argument
+   * before the variable argument list, i.e., the last argument of which the
+   * calling function knows the type
+   * ap == argument pointer variable
+   */
   va_start(vlArgs, iTotal);
 
   for(i=0; i<iTotal; i++)
@@ -61,10 +61,10 @@ void simplePrint(int iTotal, ...)
   }
 
   /* void va_end(va_list ap); 
-	* Each invocation of va_start() must be matched by a
-	* corresponding invocation of va_end() in the same function
-	* After the call va_end(ap) the variable <ap> is undefined.
-	*/
+   * Each invocation of va_start() must be matched by a
+   * corresponding invocation of va_end() in the same function
+   * After the call va_end(ap) the variable <ap> is undefined.
+   */
   va_end(vlArgs);
 
 }

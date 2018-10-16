@@ -11,8 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-struct node_st{
+struct node_st
+{
   int elem;
   struct node_st* prox;
 };
@@ -20,7 +20,8 @@ struct node_st{
 typedef struct node_st* list_t;
 typedef struct node_st* position_t;
 
-void printList(list_t l){
+void printList(list_t l)
+{
   if(l->prox != NULL)
   {
     printf("%d ", l->prox->elem);
@@ -28,7 +29,8 @@ void printList(list_t l){
   }
 }
 
-void printListReversed(list_t l){
+void printListReversed(list_t l)
+{
   if(l->prox != NULL)
   {
 	 printListReversed(l->prox);
@@ -47,7 +49,8 @@ int main(void)
   L = (list_t) malloc(sizeof(list_t));
 
   p = L;
-  for(i=0; i<3; i++){
+  for(i=0; i<3; i++)
+  {
 	 p->prox = (list_t) malloc(sizeof(list_t));
 	 p->prox->elem = i;
 	 p = p->prox;

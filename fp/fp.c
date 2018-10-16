@@ -23,7 +23,7 @@ void fHardCodedMapping(int*);
 int main(int argc, char* argv[])
 {
   int (*fPointer[])(int) = {fAdd, fSub}; // vector of function pointer
-													  // declaration and initialization
+                                         // declaration and initialization
   int iMapping[MAX_OPCODE_RANGE+1];      // mapping
   int iResult;
   int i;
